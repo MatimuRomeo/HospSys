@@ -1,0 +1,62 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="d24819387DataSet" targetNamespace="http://tempuri.org/d24819387DataSet.xsd" xmlns:mstns="http://tempuri.org/d24819387DataSet.xsd" xmlns="http://tempuri.org/d24819387DataSet.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections>
+          <Connection AppSettingsObjectName="Settings" AppSettingsPropertyName="d24819387ConnectionString" ConnectionStringObject="" IsAppSettingsProperty="true" Modifier="Assembly" Name="d24819387ConnectionString (Settings)" ParameterPrefix="@" PropertyReference="ApplicationSettings.HospSys.Properties.Settings.GlobalReference.Default.d24819387ConnectionString" Provider="MySql.Data.MySqlClient" />
+        </Connections>
+        <Tables>
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="total_monthly_salary_for_staffTableAdapter" GeneratorDataComponentClassName="total_monthly_salary_for_staffTableAdapter" Name="total_monthly_salary_for_staff" UserDataComponentName="total_monthly_salary_for_staffTableAdapter">
+            <MainSource>
+              <DbSource ConnectionRef="d24819387ConnectionString (Settings)" DbObjectName="d24819387.total_monthly_salary_for_staff" DbObjectType="View" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="false" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetData" UserSourceName="Fill">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="false">
+                    <CommandText>SELECT `Clinic Number`, `Staff Name`, `Position`, `Monthly Salary` FROM `d24819387`.`total_monthly_salary_for_staff`</CommandText>
+                    <Parameters />
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+            </MainSource>
+            <Mappings>
+              <Mapping SourceColumn="Clinic Number" DataSetColumn="Clinic Number" />
+              <Mapping SourceColumn="Staff Name" DataSetColumn="Staff Name" />
+              <Mapping SourceColumn="Position" DataSetColumn="Position" />
+              <Mapping SourceColumn="Monthly Salary" DataSetColumn="Monthly Salary" />
+            </Mappings>
+            <Sources />
+          </TableAdapter>
+        </Tables>
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="d24819387DataSet" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:EnableTableAdapterManager="True" msprop:Generator_DataSetName="d24819387DataSet" msprop:Generator_UserDSName="d24819387DataSet">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="total_monthly_salary_for_staff" msprop:Generator_TableClassName="total_monthly_salary_for_staffDataTable" msprop:Generator_TableVarName="tabletotal_monthly_salary_for_staff" msprop:Generator_TablePropName="total_monthly_salary_for_staff" msprop:Generator_RowDeletingName="total_monthly_salary_for_staffRowDeleting" msprop:Generator_RowChangingName="total_monthly_salary_for_staffRowChanging" msprop:Generator_RowEvHandlerName="total_monthly_salary_for_staffRowChangeEventHandler" msprop:Generator_RowDeletedName="total_monthly_salary_for_staffRowDeleted" msprop:Generator_UserTableName="total_monthly_salary_for_staff" msprop:Generator_RowChangedName="total_monthly_salary_for_staffRowChanged" msprop:Generator_RowEvArgName="total_monthly_salary_for_staffRowChangeEvent" msprop:Generator_RowClassName="total_monthly_salary_for_staffRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="Clinic_x0020_Number" msprop:Generator_ColumnVarNameInTable="columnClinic_Number" msprop:Generator_ColumnPropNameInRow="Clinic_Number" msprop:Generator_ColumnPropNameInTable="Clinic_NumberColumn" msprop:Generator_UserColumnName="Clinic Number" type="xs:int" />
+              <xs:element name="Staff_x0020_Name" msprop:Generator_ColumnVarNameInTable="columnStaff_Name" msprop:Generator_ColumnPropNameInRow="Staff_Name" msprop:Generator_ColumnPropNameInTable="Staff_NameColumn" msprop:Generator_UserColumnName="Staff Name">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="91" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Position" msprop:Generator_ColumnVarNameInTable="columnPosition" msprop:Generator_ColumnPropNameInRow="Position" msprop:Generator_ColumnPropNameInTable="PositionColumn" msprop:Generator_UserColumnName="Position">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="45" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Monthly_x0020_Salary" msprop:Generator_ColumnVarNameInTable="columnMonthly_Salary" msprop:Generator_ColumnPropNameInRow="Monthly_Salary" msprop:Generator_ColumnPropNameInTable="Monthly_SalaryColumn" msprop:Generator_UserColumnName="Monthly Salary" type="xs:double" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>
